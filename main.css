@@ -256,32 +256,56 @@ svg {
   opacity: 1;
   transition: 0s
 }
+
 * {
   box-sizing: border-box;
 }
+
 .square {
   color:white;
   font-size: 16px;
   text-align: Left;
   padding:15px;
   flex: 1;
+}
 
+.boxes {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 420px);
+  flex-wrap: wrap;
 }
 
 .box1 { background:rgba(35,35,35,.5);}
-.box2 {
-  background:rgba(35,35,35,.5);
-  font-size: 24px;
-}
-.box3 { 
-    background:rgba(35,35,35,.5);
-  
-  }
+
+.box2 { background:rgba(35,35,35,.5);}
+
+.box3 { background:rgba(35,35,35,.5);}
+
 .box4 { background:rgba(35,35,35,.5);}
+
 .box5 { background:rgba(35,35,35,.5);}
+
+.box6 { background:rgba(35,35,35,.5);}
+
+.box7 { background:rgba(35,35,35,.5);}
+
+.box8 { background:rgba(35,35,35,.5);}
+
+.cage {
+  background:rgba(35,35,35,.5);
+  padding: 15px;
+  width: 420px;
+  height: 315px;
+}
 
 .shipping {
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
+}
+
+.crate {
+  display: flex;
+  flex-direction: grid;
   justify-content: flex-start;
 }
