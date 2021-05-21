@@ -166,6 +166,10 @@ body, html {
   overflow: hidden;
   font-family: 'Lato', sans-serif;
 }
+img {
+  width: 100%;  
+}
+
 
 .container {
   width: 400px;
@@ -273,6 +277,7 @@ svg {
   display: grid;
   grid-template-columns: repeat(auto-fill, 420px);
   flex-wrap: wrap;
+  
 }
 
 .box1 { background:rgba(35,35,35,.5);}
