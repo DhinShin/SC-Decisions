@@ -1,0 +1,287 @@
+
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web:400,600');
+
+/* body {
+  background: #410101;
+} */
+body {
+    background-image: url("double-bubble-dark.png");
+    background-repeat: repeat;
+  }
+  
+.nav {
+  font-family: 'Titillium Web';
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 600;
+}
+
+.nav * {
+  box-sizing: border-box;
+  transition: all .35s ease;
+}
+
+.nav li {
+  display: inline-block;
+  list-style: outside none none;
+  margin: .5em 1em;
+  padding: 0;
+}
+
+.nav a {
+  padding: .5em .8em;
+  color: rgba(255,255,255,.5);
+  position: relative;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.nav a::before,
+.nav a::after {
+  content: '';
+  height: 14px;
+  width: 14px;
+  position: absolute;
+  transition: all .35s ease;
+  opacity: 0;
+}
+
+.nav a::before {
+  content: '';
+  right: 0;
+  top: 0;
+  border-top: 3px solid #3E8914;
+  border-right: 3px solid #2E640F;
+  transform: translate(-100%, 50%);
+}
+
+.nav a:after {
+  content: '';
+  left: 0;
+  bottom: 0;
+  border-bottom: 3px solid #2E640F;
+  border-left: 3px solid #3E8914;
+  transform: translate(100%, -50%)
+}
+
+.nav a:hover:before,
+.nav a:hover:after{
+  transform: translate(0,0);
+  opacity: 1;
+}
+
+.nav a:hover {
+  color: #3DA35D;
+}
+body {
+    
+    margin: 0;
+    font-family: Arial;
+    color: white;
+}
+.indexdiv-image {
+    background-image: url("SC_01_Wallpaper_3840x2160.jpg"); /* The image used */
+    background-color: #cccccc; /* Used if the image is unavailable */
+    height: 1000px; /* You must set a specified height */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    display: flex;
+
+  }
+
+.index-image {
+    background-image: url("SC_01_Wallpaper_3840x2160.jpg"); /* The image used */
+    background-color: #cccccc; /* Used if the image is unavailable */
+    height: 1080px; /* You must set a specified height */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+}
+/* .aboutme-image {
+  background-image: url("SC_01_Wallpaper_3840x2160.jpg");
+  background-color: #cccccc;
+  height: 1080px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.back-image {
+  background-image: url("SC_01_Wallpaper_3840x2160.jpg");
+  background-color: #cccccc;
+  height: 1080px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.contactme-image {
+  background-image: url("SC_01_Wallpaper_3840x2160.jpg");
+  background-color: #cccccc;
+  height: 1080px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.home-image {
+  background-image: url("SC_01_Wallpaper_3840x2160.jpg"); 
+  background-color: #cccccc; 
+  height: 1080px; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-size: cover; 
+}
+.wait-image {
+  background-image: url("SC_01_Wallpaper_3840x2160.jpg"); 
+  background-color: #cccccc; 
+  height: 1080px; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-size: cover; 
+} */
+.index-text {
+    text-align: center;
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    color: white;
+}   
+h1 {
+    color: white;
+    font-size: 40px;
+}
+
+h2 {
+    color: white;
+    font-size: 20px;    
+}
+
+@import url('https://fonts.googleapis.com/css?family=Lato:100&display=swap');
+
+body, html { 
+  width: 100%; /* new button */
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-family: 'Lato', sans-serif;
+}
+
+.container {
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  left: 50%;
+  top: 75%;
+  transform: translate(-50%, -25%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.center {
+  width: 180px;
+  height: 60px;
+  position: absolute;
+}
+
+.btn {
+  width: 180px;
+  height: 60px;
+  cursor: pointer;
+  background: transparent;
+  border: 1px solid #91C9FF;
+  outline: none;
+  transition: 1s ease-in-out;
+}
+
+svg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  fill: none;
+  stroke: #fff;
+  stroke-dasharray: 150 480;
+  stroke-dashoffset: 150;
+  transition: 1s ease-in-out;
+}
+
+.btn:hover {
+  transition: 1s ease-in-out;
+  background: #4F95DA;
+}
+
+.btn:hover svg {
+  stroke-dashoffset: -480;
+}
+
+.btn span {
+  color: white;
+  font-size: 18px;
+  font-weight: 100;
+}
+
+.choice {
+  position: relative;
+  background-color: rgba(2, 59, 2, 0.5);
+  border: none;
+  font-size: 20px;
+  color: #FFFFFF;
+  padding: 20px;
+  width: 200px;
+  text-align: center;
+  -webkit-transition-duration: 0.5s; /* Safari */
+  transition-duration: 0.5s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.choice:after {
+  content: "";
+  background: #90EE90;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px!important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s
+}
+
+.choice:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+}
+* {
+  box-sizing: border-box;
+}
+.square {
+  color:white;
+  font-size: 16px;
+  text-align: Left;
+  padding:15px;
+  flex: 1;
+
+}
+
+.box1 { background:rgba(35,35,35,.5);}
+.box2 {
+  background:rgba(35,35,35,.5);
+  font-size: 24px;
+}
+.box3 { 
+    background:rgba(35,35,35,.5);
+  
+  }
+.box4 { background:rgba(35,35,35,.5);}
+.box5 { background:rgba(35,35,35,.5);}
+
+.shipping {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}

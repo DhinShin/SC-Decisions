@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+</head>
+<body>
+    <body>
+     <div>   
+    <ul class="nav">
+        <li><a href="index.html">Intro</a></li>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="aboutme.html">About Me</a></li>
+        <li><a href="wait.html">Wait</a></li>
+        <li><a href="back.html">Back</a></li>
+        <li><a href="contactme.html">Contact</a></li>
+    </ul>
+</div>
+<div>
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script>
+    $(document).ready(function(){
+    var header = $('body');
+    
+    var backgrounds = new Array(
+        'url(SC_01_Wallpaper_1500x500.jpg)'
+      , 'url(SC_11_Wallpaper_1500x500.jpg)'
+      , 'url(SC_12_Wallpaper_1500x500.jpg)'
+      , 'url(SC_17_Wallpaper_1500x500.jpg)'
+    );
+    
+    var current = 0;
+    
+    function nextBackground() {
+        current++;
+        current = current % backgrounds.length;
+        header.css('background-image', backgrounds[current]);
+    }
+    setInterval(nextBackground, 1000);
+    
+    header.css('background-image', backgrounds[0]);
+    });
+    </script>
+    </div>
+  <div class="indexdiv-image">
+    <div class="index-text">
+      <h1 style="font-size:40px">Should I buy Star Citizen?</h1>
+      <h3>I can lead you to the path, but only you can walk it.</h3>
+      <button><a href="index.html">Follow me</a></button>
+    </div>
+  </div>  
+</body>
+</html>
+
