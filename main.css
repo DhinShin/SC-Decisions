@@ -4,11 +4,20 @@
 /* body {
   background: #410101;
 } */
-body {
+body, html {
     background-image: url("double-bubble-dark.png");
     background-repeat: repeat;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    color: white;
+    overflow-y: auto;
   }
   
+/* Nav bar code */
+
 .nav {
   font-family: 'Titillium Web';
   text-transform: uppercase;
@@ -74,7 +83,8 @@ body {
   color: #3DA35D;
 }
 
-/* nav bar works great I can leave it alone */
+/* nav bar works great I can leave it alone, didn't even need to tweak the colours,
+need to work out how it works, because it's too cool */
 
 /* body {
     
@@ -82,17 +92,22 @@ body {
     font-family: ;
     color: white;
     
-} */
+}
 
 body, html { 
-  width: 100%; /* new button */
+  width: 100%; 
   height: 100%;
   margin: 0;
   padding: 0;
   font-family: 'Lato', sans-serif;
   color: white;
   overflow-y: auto;
+} extra body code, I took what was needed and cleaned up*/
+
+img {
+  width: 100%;  
 }
+
 .indexdiv-image {
     background-image: url("SC_01_Wallpaper_3840x2160.jpg"); /* The image used */
     background-color: #cccccc; /* Used if the image is unavailable */
@@ -175,10 +190,7 @@ h2 {
 @import url('https://fonts.googleapis.com/css?family=Lato:100&display=swap');
 
 
-img {
-  width: 100%;  
-}
-
+/* Animated button on index.html */
 
 .container {
   width: 400px;
@@ -234,7 +246,10 @@ svg {
   font-weight: 100;
 }
 
-.choice {
+/* Animated button code end */
+/* Two animated buttons on home.html */
+
+.choice { 
   position: relative;
   background-color: rgba(2, 59, 2, 0.5);
   border: none;
@@ -269,6 +284,8 @@ svg {
   opacity: 1;
   transition: 0s
 }
+
+/* Animated buttons end */
 
 * {
   box-sizing: border-box;
