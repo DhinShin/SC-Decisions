@@ -16,7 +16,7 @@ body, html {
     overflow-y: auto;
   }
   
-/* Nav bar code */
+/* Nav bar code source: https://www.proglobalbusinesssolutions.com/css-hover-effects/ */
 
 .nav {
   font-family: 'Titillium Web';
@@ -190,7 +190,8 @@ h2 {
 @import url('https://fonts.googleapis.com/css?family=Lato:100&display=swap');
 
 
-/* Animated button on index.html */
+/* Animated button on index.html
+source: https://codepen.io/vitor-siqueira/pen/xNBExN/ */
 
 .container {
   width: 400px;
@@ -244,10 +245,11 @@ svg {
   color: white;
   font-size: 18px;
   font-weight: 100;
+  
 }
 
 /* Animated button code end */
-/* Two animated buttons on home.html */
+/* Two animated buttons on home.html Source: https://www.w3schools.com/howto/howto_css_animate_buttons.asp */
 
 .choice { 
   position: relative;
@@ -291,6 +293,9 @@ svg {
   box-sizing: border-box;
 }
 
+/* Just more flex boox stuff, I had to use different container name veriables, it was only near the end 
+I realised I could just have one .box as the example in class all had indiviual background colours*/
+
 .square {
   color:white;
   font-size: 16px;
@@ -321,6 +326,8 @@ svg {
 .box7 { background:rgba(35,35,35,.5);}
 
 .box8 { background:rgba(35,35,35,.5);}
+
+/* witness the stupidity of 8 box style, yes they are really all the same */
 
 .cage {
   background:rgba(35,35,35,.5);
